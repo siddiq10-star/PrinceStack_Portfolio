@@ -7,7 +7,6 @@ html {
 }
 
 .home {
-  background-image: url('../src/assets/Banner-bg.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
