@@ -1,4 +1,13 @@
-/robots.txt    /robots.txt    200
-/sitemap.xml   /sitemap.xml   200
-/*             /index.html    200
+# Serve these files directly (not through the SPA rewrite)
+# (order matters — keep these above the catch‑all)
+ /robots.txt        /robots.txt        200
+ /sitemap.xml       /sitemap.xml       200
+ /site.webmanifest  /site.webmanifest  200
+ /favicon.ico       /favicon.ico       200
+ /icon.svg          /icon.svg          200
+ /icon-192.png      /icon-192.png      200
+ /icon-512.png      /icon-512.png      200
+ /og-image.jpg      /og-image.jpg      200
 
+# SPA fallback: send everything else to index.html
+ /*                 /index.html        200
