@@ -1,0 +1,46 @@
+.contact-section {
+  background: linear-gradient(90deg, #181817, #0f0f0fef);
+  padding: 60px 0;
+  color: white;
+}
+
+.custom-input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  padding: 12px;
+  color: white;
+}
+
+.custom-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-input:focus {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  box-shadow: none;
+}
+
+.custom-button {
+  padding: 10px 20px;
+  border: 2px solid #00f9ff;
+  background: transparent;
+  color: #00f9ff;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00f9ff44;
+  text-shadow: 0 0 2px #00f9ff88;
+  width: fit-content; /* prevents stretching */
+  white-space: nowrap;
+}
+
+.custom-button:hover {
+  background-color: rgba(0, 249, 255, 0.1);
+  box-shadow: 0 0 18px #00f9ff, 0 0 30px #00f9ff;
+  color: #ffffff;
+  transform: scale(1.05);
+}

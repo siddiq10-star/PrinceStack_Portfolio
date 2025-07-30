@@ -1,0 +1,125 @@
+.skill {
+  color: white;
+  background-color: #000; /* or match your theme */
+}
+
+.skill-bx {
+  background-color: #1e1e1e;
+  border-radius: 30px;
+  padding: 40px;
+  text-align: center;
+}
+
+.skills-wrapper-row.single-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.skill-item h6 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.circle svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.circle circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.circle circle:first-child {
+  stroke: #444;
+}
+
+.circle circle:last-child {
+  stroke: url(#gradientStroke);
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+/* Arrow Buttons */
+.nav-arrow {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Carousel Arrows */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+  padding: 0;
+}
+
+.custom-arrow.left {
+  left: 0;
+}
+
+.custom-arrow.right {
+  right: 0;
+}
+
+.custom-arrow img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.custom-arrow:hover img {
+  transform: scale(1.1) translateX(5px); /* gives a forward arrow effect */
+}
+
+.skill-carousel-wrapper {
+  position: relative;
+  padding: 0 50px; /* To make space for arrows */
+}

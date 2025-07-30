@@ -1,0 +1,119 @@
+.nav-icon-btn {
+  transition: all 0.2s ease;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+
+.social-icons {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white !important;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: color 0.3s ease-in-out;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.social-icons::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in-out;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.social-icons:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons:hover i {
+  transform: scale(1.3);
+  color: #000 !important;
+}
+
+
+.lets-cnt {
+  border: 1px solid white;
+  padding: 8px 20px;
+  font-weight: 700; /* Make it bold */
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.lets-cnt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  z-index: -1;
+  transition: width 0.4s ease-in-out;
+}
+
+.lets-cnt:hover::before {
+  width: 100%;
+}
+
+.lets-cnt:hover {
+  color: #121212 !important; /* Text turns black */
+}
+
+.nav-icon-btn:hover {
+  color: #fff;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link.active {
+  color: #f7fafa !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  z-index: 1050;
+}
+
+.navbar-toggler {
+  background-color: #080808;
+  color: white !important;
+  border-color: #fff;
+}
+
+.navbar-brand {
+  cursor: pointer;
+}
+
+.navbar-brand:hover {
+  color: #a12cff;
+  text-decoration: none;
+}

@@ -1,0 +1,84 @@
+section {
+  scroll-margin-top: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  background-image: url('../src/assets/Banner-bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh; /* Reduced from 100vh */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 8%; /* Reduced top padding */
+  padding-bottom: 4%; /* Add bottom padding if needed */
+}
+
+.bg-welcome {
+      background: linear-gradient(90.21deg, rgba(63, 160, 39, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      display: inline-block;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      padding: 8px 10px;
+}
+
+.txt-rotate {
+  font-size: 2rem; /* or try 2.5rem, 32px, etc. */
+  color: #fff;
+}
+
+.lets-cnt-2 {
+  padding: 10px 20px;
+  border: 2px solid #00f9ff;
+  background: transparent;
+  color: #00f9ff;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00f9ff44;
+  text-shadow: 0 0 2px #00f9ff88;
+  width: fit-content; /* prevents stretching */
+  white-space: nowrap;
+}
+
+.lets-cnt-2:hover {
+  background-color: rgba(0, 249, 255, 0.1);
+  box-shadow: 0 0 18px #00f9ff, 0 0 30px #00f9ff;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.arrow-icon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.home img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;      /* Keeps the image nicely cropped */
+  border-radius: 50%;     /* Makes it a circle */
+  border: 4px solid #0ff; /* Optional: adds a border */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4); /* Optional: glow */
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.home img {
+  animation: float 3s ease-in-out infinite;
+}
