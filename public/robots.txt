@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://princestack-portfolio.netlify.app/sitemap.xml
