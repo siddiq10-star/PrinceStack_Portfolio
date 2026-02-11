@@ -2,25 +2,62 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../stylesheets/Projects.css";
 import projectimg1 from "../assets/project-img1.png";
+import projectimg3 from "../assets/project-img3.png";
 
 function Projects() {
   const [activeTab, setActiveTab] = useState("tab1");
 
   const tabContent = {
     tab1: [
-      { img: projectimg1, alt: "Travel World" },
-      { img: projectimg1, alt: "Travel World" },
-      { img: projectimg1, alt: "Travel World" },
+      {
+        img: projectimg1,
+        alt: "CRUD App",
+        link: "https://mern-crud-app1.netlify.app/",
+      },
+      {
+        img: projectimg1,
+        alt: "Travel World",
+        link: "https://yourproject2.com",
+      },
+      {
+        img: projectimg3,
+        alt: "MERN CRUD APP",
+        link: "https://mern-crud-app1.netlify.app/",
+      },
     ],
     tab2: [
-      { img: projectimg1, alt: "Travel World" },
-      { img: projectimg1, alt: "Travel World" },
-      { img: projectimg1, alt: "Travel World" },
+      {
+        img: projectimg1,
+        alt: "Travel World",
+        link: "https://yourproject1.com",
+      },
+      {
+        img: projectimg1,
+        alt: "Travel World",
+        link: "https://yourproject2.com",
+      },
+      {
+        img: projectimg1,
+        alt: "Travel World",
+        link: "https://yourproject3.com",
+      },
     ],
     tab3: [
-      { img: projectimg1, alt: "Travel World" },
-      { img: projectimg1, alt: "Travel World" },
-      { img: projectimg1, alt: "Travel World" },
+      {
+        img: projectimg1,
+        alt: "Travel World",
+        link: "https://yourproject1.com",
+      },
+      {
+        img: projectimg1,
+        alt: "Travel World",
+        link: "https://yourproject2.com",
+      },
+      {
+        img: projectimg1,
+        alt: "Travel World",
+        link: "https://yourproject3.com",
+      },
     ],
   };
 
@@ -57,11 +94,17 @@ function Projects() {
           {tabContent[activeTab].map((project, index) => (
             <Col key={index} md={6} lg={4}>
               <div className="project-card">
-                <img
-                  src={project.img}
-                  alt={project.alt}
-                  className="img-fluid"
-                />
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={project.img}
+                    alt={project.alt}
+                    className="img-fluid"
+                  />
+                </a>
               </div>
             </Col>
           ))}
