@@ -42,23 +42,6 @@ function Projects() {
         link: "https://yourproject3.com",
       },
     ],
-    tab3: [
-      {
-        img: projectimg1,
-        alt: "Travel World",
-        link: "https://yourproject1.com",
-      },
-      {
-        img: projectimg1,
-        alt: "Travel World",
-        link: "https://yourproject2.com",
-      },
-      {
-        img: projectimg1,
-        alt: "Travel World",
-        link: "https://yourproject3.com",
-      },
-    ],
   };
 
   return (
@@ -76,7 +59,7 @@ function Projects() {
 
         {/* Custom Tabs */}
         <div className="d-flex justify-content-center gap-3 mb-5">
-          {["tab1", "tab2", "tab3"].map((tab, index) => (
+          {["tab1", "tab2"].map((tab, index) => (
             <button
               key={tab}
               className={`custom-tab-button ${
